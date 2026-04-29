@@ -1,0 +1,9 @@
+Coloque AQUI a foto da fachada da unidade campina-grande.
+
+PADRÃO DE NOMENCLATURA:
+  fachada-campina-grande.jpg
+
+DIMENSÃO IDEAL:
+  1920x1080 pixels (paisagem 16:9)
+
+Apenas 1 foto da fachada externa da clínica.

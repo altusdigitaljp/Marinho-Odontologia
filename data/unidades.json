@@ -1,0 +1,63 @@
+{
+  "horarioPadrao": "Seg a Sex: 8h às 18h · Sábado: 8h às 12h",
+  "mangabeira": {
+    "slug": "mangabeira",
+    "cidade": "João Pessoa",
+    "bairro": "Mangabeira",
+    "nomeCompleto": "Marinho Odontologia — Mangabeira",
+    "whatsapp": "5583988900095",
+    "whatsappFormatado": "(83) 98890-0095",
+    "endereco": "Mangabeira, João Pessoa — PB",
+    "horario": "Seg a Sex: 8h às 18h · Sábado: 8h às 12h",
+    "mapaEmbed": "https://maps.google.com/maps?q=Marinho+Odontologia+Mangabeira+Jo%C3%A3o+Pessoa&output=embed&hl=pt-BR&z=16",
+    "googleMapsLink": "https://share.google/NkAF53qSNRoxbWqJu"
+  },
+  "epitacio": {
+    "slug": "epitacio",
+    "cidade": "João Pessoa",
+    "bairro": "Av. Epitácio Pessoa",
+    "nomeCompleto": "Marinho Odontologia — Epitácio",
+    "whatsapp": "5583982700109",
+    "whatsappFormatado": "(83) 98270-0109",
+    "endereco": "Av. Epitácio Pessoa, João Pessoa — PB",
+    "horario": "Seg a Sex: 8h às 18h · Sábado: 8h às 12h",
+    "mapaEmbed": "https://maps.google.com/maps?q=Marinho+Odontologia+Epit%C3%A1cio+Jo%C3%A3o+Pessoa&output=embed&hl=pt-BR&z=16",
+    "googleMapsLink": "https://share.google/uzdEefC6gBj0oX5VA"
+  },
+  "geisel": {
+    "slug": "geisel",
+    "cidade": "João Pessoa",
+    "bairro": "Geisel",
+    "nomeCompleto": "Marinho Odontologia — Geisel",
+    "whatsapp": "5583982700110",
+    "whatsappFormatado": "(83) 98270-0110",
+    "endereco": "Geisel, João Pessoa — PB",
+    "horario": "Seg a Sex: 8h às 18h · Sábado: 8h às 12h",
+    "mapaEmbed": "https://maps.google.com/maps?q=Marinho+Odontologia+Geisel+Jo%C3%A3o+Pessoa&output=embed&hl=pt-BR&z=16",
+    "googleMapsLink": "https://share.google/0Mm19o02adrxlC9bS"
+  },
+  "centro": {
+    "slug": "centro",
+    "cidade": "João Pessoa",
+    "bairro": "Centro",
+    "nomeCompleto": "Marinho Odontologia — Centro",
+    "whatsapp": "5583980255117",
+    "whatsappFormatado": "(83) 98025-5117",
+    "endereco": "Centro, João Pessoa — PB",
+    "horario": "Seg a Sex: 8h às 18h · Sábado: 8h às 12h",
+    "mapaEmbed": "https://maps.google.com/maps?q=Marinho+Odontologia+Centro+Jo%C3%A3o+Pessoa&output=embed&hl=pt-BR&z=16",
+    "googleMapsLink": "https://share.google/34Xmjdz5o66Vl45Ag"
+  },
+  "campina-grande": {
+    "slug": "campina-grande",
+    "cidade": "Campina Grande",
+    "bairro": "Campina Grande",
+    "nomeCompleto": "Marinho Odontologia — Campina Grande",
+    "whatsapp": "5583988900115",
+    "whatsappFormatado": "(83) 98890-0115",
+    "endereco": "Campina Grande — PB",
+    "horario": "Seg a Sex: 8h às 18h · Sábado: 8h às 12h",
+    "mapaEmbed": "https://maps.google.com/maps?q=Marinho+Odontologia+Campina+Grande&output=embed&hl=pt-BR&z=15",
+    "googleMapsLink": "https://share.google/fms7FIKYhntoilfxm"
+  }
+}

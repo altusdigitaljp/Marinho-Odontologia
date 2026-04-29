@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" role="img" aria-label="Marinho Odontologia">
+  <defs>
+    <linearGradient id="mGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#75C5F0"/>
+      <stop offset="55%" stop-color="#007CC3"/>
+      <stop offset="100%" stop-color="#00577B"/>
+    </linearGradient>
+    <linearGradient id="ovalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#75C5F0"/>
+      <stop offset="50%" stop-color="#007CC3"/>
+      <stop offset="100%" stop-color="#00577B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Símbolo "M" dentro de elipse com swoosh -->
+  <g transform="translate(200, 150)">
+    <!-- Elipse de fundo -->
+    <ellipse cx="0" cy="0" rx="125" ry="78" fill="url(#ovalGrad)" opacity="0.95"/>
+    <ellipse cx="0" cy="0" rx="125" ry="78" fill="none" stroke="#0C1B27" stroke-width="3"/>
+
+    <!-- Letra M estilizada -->
+    <path d="M -55 50 L -55 -55 L -25 -55 L 0 -10 L 25 -55 L 55 -55 L 55 50 L 30 50 L 30 -25 L 5 15 L -5 15 L -30 -25 L -30 50 Z"
+          fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- Sombra interna do M (efeito 3D) -->
+    <path d="M -55 50 L -55 -55 L -25 -55 L 0 -10 L 0 50 L -30 50 L -30 -25 L -55 -25 Z"
+          fill="#007CC3" opacity="0.3"/>
+
+    <!-- Swoosh superior (curva clara) -->
+    <path d="M -135 -30 Q -80 -85 0 -82 Q 80 -85 135 -30"
+          fill="none" stroke="#E7E8EA" stroke-width="5" stroke-linecap="round"/>
+    <!-- Swoosh inferior (curva escura) -->
+    <path d="M -135 30 Q -80 85 0 82 Q 80 85 135 30"
+          fill="none" stroke="#0C1B27" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <!-- Texto MARINHO -->
+  <text x="200" y="350" text-anchor="middle"
+        font-family="'Saira', 'Montserrat', sans-serif" font-weight="900"
+        font-size="62" letter-spacing="2" fill="currentColor">MARINHO</text>
+
+  <!-- Triângulo entre o A do MARINHO -->
+  <polygon points="138,335 148,335 143,322" fill="#007CC3"/>
+
+  <!-- Texto ODONTOLOGIA -->
+  <text x="200" y="395" text-anchor="middle"
+        font-family="'Saira', 'Montserrat', sans-serif" font-weight="500"
+        font-size="22" letter-spacing="6" fill="currentColor">ODONTOLOGIA</text>
+</svg>

@@ -1,0 +1,9 @@
+Coloque AQUI a foto da equipe da unidade mangabeira.
+
+PADRÃO DE NOMENCLATURA:
+  equipe-mangabeira.jpg
+
+DIMENSÃO IDEAL:
+  1920x1080 pixels (paisagem 16:9)
+
+Apenas 1 foto da equipe local.
