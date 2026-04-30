@@ -606,6 +606,24 @@ p { margin: 0; }
   box-shadow: var(--shadow-md);
 }
 .unidade-fachada img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Modifier para fachadas verticais (ex: Geisel) */
+.unidade-fachada-vertical {
+  aspect-ratio: 4 / 5;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--azul-escuro);
+}
+.unidade-fachada-vertical img {
+  object-fit: contain;
+  background: var(--branco);
+}
+@media (min-width: 768px) {
+  .unidade-fachada-vertical {
+    max-width: 420px;
+  }
+}
 .unidade-cta {
   margin-top: var(--s-6);
   display: flex;
