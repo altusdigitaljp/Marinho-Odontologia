@@ -531,6 +531,32 @@ p { margin: 0; }
   margin-bottom: var(--s-2);
   filter: drop-shadow(0 2px 4px rgba(0, 124, 195, 0.2));
 }
+.especialidade .icone-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--s-3);
+  background: linear-gradient(135deg, rgba(0, 124, 195, 0.12), rgba(117, 197, 240, 0.12));
+  border-radius: var(--r-full);
+  color: var(--azul-primario);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+.especialidade:hover .icone-svg {
+  background: linear-gradient(135deg, var(--azul-primario), var(--azul-petroleo));
+  color: var(--branco);
+  transform: scale(1.08);
+}
+.especialidade .icone-svg svg {
+  width: 28px;
+  height: 28px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 /* ============================================
    BLOCO DA UNIDADE
