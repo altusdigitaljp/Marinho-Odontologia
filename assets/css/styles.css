@@ -855,3 +855,554 @@ p { margin: 0; }
 @media (max-width: 767px) {
   .galeria-hint { display: none; }
 }
+
+/* ============================================
+   BLOCO UNIDADES-MULTI (lista vertical de unidades)
+   Usado na landing unificada de João Pessoa
+   ============================================ */
+.bloco-unidades-multi .pergunta-unidade {
+  font-family: var(--font-headline);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 800;
+  color: var(--azul-escuro);
+  text-align: center;
+  margin: 0 0 var(--s-8) 0;
+  line-height: 1.2;
+}
+
+.bloco-unidades-multi .unidades-lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.unidade-card {
+  background: var(--branco);
+  border: 1px solid var(--cinza-neutro);
+  border-radius: var(--r-md);
+  padding: var(--s-6);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.unidade-card.ativo {
+  border: 2px solid var(--azul-primario);
+  box-shadow: var(--shadow-md);
+}
+
+.unidade-card .unidade-bairro {
+  font-family: var(--font-headline);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--azul-petroleo);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0 0 var(--s-3) 0;
+}
+
+.unidade-card .unidade-linha {
+  display: flex;
+  gap: var(--s-2);
+  align-items: flex-start;
+  font-size: 0.95rem;
+  color: var(--azul-escuro);
+  margin-bottom: var(--s-2);
+  line-height: 1.4;
+}
+
+.unidade-card .unidade-linha .icone {
+  flex-shrink: 0;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+
+.unidade-card .unidade-mapa-toggle {
+  display: inline-block;
+  margin-top: var(--s-3);
+  margin-bottom: var(--s-4);
+  padding: var(--s-2) var(--s-4);
+  background: transparent;
+  color: var(--azul-primario);
+  border: 1px solid var(--azul-primario);
+  border-radius: var(--r-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.unidade-card .unidade-mapa-toggle:hover {
+  background: var(--azul-primario);
+  color: var(--branco);
+}
+
+.unidade-card .unidade-mapa-container {
+  margin-bottom: var(--s-4);
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  height: 260px;
+}
+
+.unidade-card .unidade-mapa-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.unidade-card .btn-whatsapp {
+  width: 100%;
+  margin-top: var(--s-2);
+}
+
+/* ============================================
+   HUB (página inicial)
+   ============================================ */
+.hub-hero {
+  padding: var(--s-16) 0 var(--s-8) 0;
+  background: var(--gradient-hero);
+  color: var(--branco);
+  text-align: center;
+}
+
+.hub-hero h1 {
+  color: var(--branco);
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  margin-bottom: var(--s-4);
+}
+
+.hub-hero .hub-sub {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s-5);
+  max-width: 920px;
+  margin: 0 auto;
+  padding: var(--s-12) var(--s-4);
+}
+
+@media (min-width: 720px) {
+  .hub-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hub-card {
+  display: block;
+  background: var(--branco);
+  border: 1px solid var(--cinza-neutro);
+  border-radius: var(--r-md);
+  padding: var(--s-6);
+  text-align: left;
+  text-decoration: none;
+  color: var(--azul-escuro);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.hub-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--azul-primario);
+}
+
+.hub-card .hub-card-eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--azul-primario);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--s-2);
+}
+
+.hub-card .hub-card-titulo {
+  font-family: var(--font-headline);
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+  color: var(--azul-escuro);
+}
+
+/* ============================================
+   HUB v2 — Hero grande, cards de cidade, prova social
+   ============================================ */
+.hub-hero-grande {
+  padding: var(--s-20) 0 var(--s-16) 0;
+  background: var(--gradient-hero);
+  position: relative;
+  overflow: hidden;
+}
+
+.hub-hero-grande .hub-eyebrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--azul-claro);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--s-5);
+  padding: var(--s-2) var(--s-4);
+  border: 1px solid rgba(117, 197, 240, 0.4);
+  border-radius: var(--r-full);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.hub-hero-grande h1 {
+  color: var(--branco);
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  margin-bottom: var(--s-5);
+  letter-spacing: -0.02em;
+}
+
+.hub-hero-grande .hub-sub {
+  font-size: clamp(1rem, 2.4vw, 1.2rem);
+  opacity: 0.92;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.55;
+  color: var(--branco);
+}
+
+.hub-cidades {
+  padding: var(--s-20) 0 var(--s-16) 0;
+  background: var(--gradient-light);
+}
+
+.hub-cidades h2 {
+  text-align: center;
+  margin-bottom: var(--s-12);
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+.hub-cidades-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s-6);
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+@media (min-width: 760px) {
+  .hub-cidades-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-8);
+  }
+}
+
+.hub-cidade-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--branco);
+  border: 1px solid var(--cinza-neutro);
+  border-radius: var(--r-lg);
+  padding: var(--s-8);
+  text-decoration: none;
+  color: var(--azul-escuro);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hub-cidade-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--azul-primario);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.hub-cidade-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--azul-primario);
+}
+
+.hub-cidade-card:hover::before {
+  transform: scaleX(1);
+}
+
+.hub-cidade-card-topo {
+  margin-bottom: var(--s-5);
+}
+
+.hub-cidade-card-eyebrow {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--azul-primario);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--s-2);
+}
+
+.hub-cidade-card-titulo {
+  font-family: var(--font-headline);
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+  color: var(--azul-escuro);
+}
+
+.hub-cidade-card-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--s-6) 0;
+  flex-grow: 1;
+}
+
+.hub-cidade-card-lista li {
+  position: relative;
+  padding-left: var(--s-6);
+  margin-bottom: var(--s-2);
+  font-size: 0.98rem;
+  color: var(--azul-escuro);
+  line-height: 1.5;
+}
+
+.hub-cidade-card-lista li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 14px;
+  height: 2px;
+  background: var(--azul-primario);
+}
+
+.hub-cidade-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--azul-primario);
+  padding-top: var(--s-4);
+  border-top: 1px solid var(--cinza-neutro);
+}
+
+.hub-cidade-card-seta {
+  transition: transform 0.25s ease;
+}
+
+.hub-cidade-card:hover .hub-cidade-card-seta {
+  transform: translateX(4px);
+}
+
+.hub-prova {
+  padding: var(--s-12) 0;
+  background: var(--branco);
+}
+
+.hub-prova-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--s-4);
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hub-prova-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  padding: var(--s-4) var(--s-2);
+}
+
+.hub-prova-numero {
+  font-family: var(--font-headline);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 800;
+  color: var(--azul-primario);
+  line-height: 1;
+}
+
+.hub-prova-label {
+  font-size: 0.85rem;
+  color: var(--azul-petroleo);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* ============================================
+   MODAL ESCOLHA DE UNIDADE
+   Aparece nos botões Hero/Final/Flutuante das landings JP
+   ============================================ */
+.modal-unidade {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s-4);
+  background: rgba(12, 27, 39, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  animation: fadeIn 0.2s ease;
+}
+
+.modal-unidade.aberto {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-unidade-conteudo {
+  background: var(--branco);
+  border-radius: var(--r-lg);
+  max-width: 480px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: var(--s-8);
+  box-shadow: var(--shadow-lg);
+  animation: slideUp 0.25s ease;
+  position: relative;
+}
+
+.modal-unidade-fechar {
+  position: absolute;
+  top: var(--s-3);
+  right: var(--s-3);
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r-full);
+  background: var(--cinza-neutro);
+  color: var(--azul-escuro);
+  font-size: 1.4rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.modal-unidade-fechar:hover {
+  background: var(--azul-claro);
+  color: var(--branco);
+}
+
+.modal-unidade-titulo {
+  font-family: var(--font-headline);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 800;
+  color: var(--azul-escuro);
+  margin: 0 0 var(--s-2) 0;
+  padding-right: var(--s-8);
+  line-height: 1.25;
+}
+
+.modal-unidade-sub {
+  font-size: 0.95rem;
+  color: var(--azul-petroleo);
+  margin: 0 0 var(--s-6) 0;
+  line-height: 1.5;
+}
+
+.modal-unidade-lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+
+.modal-unidade-opcao {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-4) var(--s-5);
+  background: var(--branco);
+  border: 1.5px solid var(--cinza-neutro);
+  border-radius: var(--r-md);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.15s ease, background 0.2s ease;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--azul-escuro);
+  width: 100%;
+}
+
+.modal-unidade-opcao:hover {
+  border-color: var(--whatsapp-verde);
+  background: rgba(37, 211, 102, 0.05);
+  transform: translateX(2px);
+}
+
+.modal-unidade-opcao-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.modal-unidade-opcao-bairro {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--azul-escuro);
+}
+
+.modal-unidade-opcao-endereco {
+  font-size: 0.85rem;
+  color: var(--azul-petroleo);
+  line-height: 1.3;
+}
+
+.modal-unidade-opcao-icone {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r-full);
+  background: var(--whatsapp-verde);
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-unidade-opcao-icone svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+@media (max-width: 480px) {
+  .modal-unidade-conteudo {
+    padding: var(--s-6) var(--s-5);
+  }
+  .modal-unidade-opcao {
+    padding: var(--s-3) var(--s-4);
+  }
+  .modal-unidade-opcao-bairro {
+    font-size: 1rem;
+  }
+  .modal-unidade-opcao-endereco {
+    font-size: 0.8rem;
+  }
+}
